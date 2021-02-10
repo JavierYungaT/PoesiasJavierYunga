@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "examenjavieryunga": {
+      "hosting": {
+        "app": [
+          "examenjavieryunga"
+        ]
+      }
+    }
+  }
+}

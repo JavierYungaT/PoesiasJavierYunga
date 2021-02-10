@@ -1,0 +1,44 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Crear Poesia</ion-title>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+        <ion-item>
+            <ion-label position="floating">Autor
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" [(ngModel)]="poesia.uidUser"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Titulo
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" [(ngModel)]="poesia.titulo"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Poema
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input required type="text" [(ngModel)]="poesia.texto"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Imagen
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <img [src]="poesia.imgUrl" />
+            <br>
+            <!--<app-imageupload (uploadFinished)="actualizarFoto($event)"> Actualizar Foto</app-imageupload> !-->
+        </ion-item>
+    </ion-list>
+    <div class="ion-padding">
+        <ion-button fill="outline" slot="end" (click)="crearPoesia()">Guardar</ion-button>
+        <ion-button fill="outline" slot="end" color="danger" (click)="cancelar()">Cancelar</ion-button>
+    </div>
+
+</ion-content>

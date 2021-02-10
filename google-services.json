@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "949368704152",
+    "firebase_url": "https://empleos-8df6b.firebaseio.com",
+    "project_id": "empleos-8df6b",
+    "storage_bucket": "empleos-8df6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949368704152:android:d90a46e01420e9216814ed",
+        "android_client_info": {
+          "package_name": "ups.edu.ec.curriculum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "949368704152-lplbku78p6u4cp1sleqdt2lskuhl74er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOuDzmWawAlRud5KwMx3D5IHXdNkY6wMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "949368704152-lplbku78p6u4cp1sleqdt2lskuhl74er.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "949368704152-ojc5k1ce5qvem87rg6jcn0guceda1vvb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ups.edu.ec.curriculum"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

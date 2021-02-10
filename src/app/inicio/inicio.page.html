@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Inicio Poesias</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button color="dark" (click)="crearPoesia()()">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+    <ion-list id="lista">
+        <ion-item *ngFor="let poesia of poesias  | async; trackBy: trackByF">
+            <ion-card>
+                <img [src]="poesia.imgUrl" />
+                <ion-card-header>
+                    <ion-card-subtitle>{{poesia.uidUser}}</ion-card-subtitle>
+                    <ion-card-title>{{poesia.titulo}}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-row>
+                        {{poesia.texto}}
+                    </ion-row>
+                    <ion-button fill="outline" slot="end" (click)="crear">Comentar</ion-button>
+                    <ion-button fill="outline" slot="end" color="danger" (click)="eliminarVet(veterinaria.uid)">Like</ion-button>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+    </ion-list>
+</ion-content>
